@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas | Nymux Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* MISMOS ESTILOS DE TU BASE PARA QUE SE VEA IGUAL */
+        :root { --primary: #6c5ce7; --dark: #1e1e2e; --darker: #121212; --text: #ffffff; --danger: #ff7675; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--darker); color: var(--text); line-height: 1.6; }
+        
+        /* HEADER SIMPLE */
+        header { background: var(--dark); padding: 40px 10%; text-align: center; border-bottom: 2px solid var(--primary); }
+        h1 { color: var(--primary); font-size: 2.5rem; text-transform: uppercase; }
+        
+        /* CONTENEDOR DE REGLAS */
+        .container { max-width: 800px; margin: 50px auto; padding: 0 20px; }
+        .rule-box { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 10px; margin-bottom: 30px; border-left: 5px solid var(--primary); }
+        .rule-box h2 { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; color: white; }
+        .rule-list li { margin-bottom: 15px; padding-left: 20px; position: relative; color: #ccc; }
+        .rule-list li::before { content: "•"; color: var(--primary); font-weight: bold; position: absolute; left: 0; }
+        .ban-msg { color: var(--danger); font-weight: bold; font-size: 0.9rem; margin-top: 10px; display: block; }
+
+        /* BOTON VOLVER */
+        .back-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: var(--primary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .back-btn:hover { background: #a29bfe; color: black; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Normativa del Servidor</h1>
+        <p>El desconocimiento de las normas no exime de su cumplimiento.</p>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
+    </header>
+
+    <div class="container">
+        
+        <div class="rule-box">
+            <h2><i class="fas fa-comments" style="color: #a29bfe;"></i> Comportamiento y Chat</h2>
+            <ul class="rule-list">
+                <li>Prohibido el spam, flood o uso excesivo de mayúsculas en el chat global.</li>
+                <li>No se permite insultar, acosar o discriminar a otros jugadores o miembros del staff.</li>
+                <li>Prohibido compartir enlaces externos ajenos a Nymux Network.</li>
+                <li>No pedir rangos, objetos o modos creativos al Staff.</li>
+                <span class="ban-msg"><i class="fas fa-gavel"></i> Sanción: Mute temporal o Ban de 24h.</span>
+            </ul>
+        </div>
+
+        <div class="rule-box" style="border-color: #ff7675;">
+            <h2><i class="fas fa-gamepad" style="color: #ff7675;"></i> Jugabilidad (Gameplay)</h2>
+            <ul class="rule-list">
+                <li><strong>USO DE HACKS:</strong> El uso de clientes modificados (KillAura, XRay, Fly) está terminantemente prohibido.</li>
+                <li>El grifeo (destrucción) está prohibido en zonas protegidas, pero permitido en zonas salvajes sin claim.</li>
+                <li>No se permite el abuso de bugs o glitches (Dupeo). Debes reportarlos inmediatamente.</li>
+                <li>Las granjas de lag masivo (Redstone excesiva) pueden ser eliminadas sin previo aviso.</li>
+                <span class="ban-msg"><i class="fas fa-ban"></i> Sanción: Ban Permanente (Sin apelación).</span>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nymux Network - Inicio</title>
+    
+    <link rel="icon" type="image/gif" href="logo.gif">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-img">
+            <img src="logo.gif" alt="Nymux Network">
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="rangos.html">Rangos</a></li>
+            <li><a href="https://netwwork-nymux.tebex.io/" target="_blank" class="store-btn"><i class="fas fa-shopping-cart"></i> TIENDA</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="logo.gif" alt="Nymux Network" style="max-width: 300px; margin-bottom: 20px; filter: drop-shadow(0 0 20px rgba(108,92,231,0.6));">
+        
+        <p>La mejor experiencia de Minecraft Survival y PvP.</p>
+        
+        <div class="dev-container">
+            <div class="dev-label">
+                <span>Estado del Desarrollo</span>
+                <span>80%</span> 
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" style="--w: 80%;"></div>
+            </div>
+        </div>
+        
+        <div class="ip-box" onclick="copyIP()">
+            <i class="fas fa-gamepad"></i>
+            <span id="ip-text">nymux.lat</span>
+            <i class="fas fa-copy"></i>
+        </div>
+        <small style="margin-top: 10px; color: #aaa;">Click para copiar IP</small>
+    </section>
+
+    <section class="bg-dark">
+        <h2>¿Por qué jugar aquí?</h2>
+        <div class="cards-container" style="margin-top: 40px;">
+            <div class="card">
+                <i class="fas fa-bolt"></i>
+                <h3>Sin Lag</h3>
+                <p>Hosteado en servidores dedicados de última generación.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Comunidad</h3>
+                <p>Eventos diarios y staff activo 24/7.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Seguridad</h3>
+                <p>Sistema anti-cheat avanzado para juego limpio.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nymux Network. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText("nymux.lat");
+            alert("¡IP Copiada! Te esperamos dentro.");
+        }
+    </script>
+</body>
+</html>

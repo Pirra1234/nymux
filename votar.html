@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar | Nymux Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root { --primary: #6c5ce7; --secondary: #a29bfe; --dark: #1e1e2e; --darker: #121212; --text: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--darker); color: var(--text); text-align: center; }
+
+        .vote-hero { padding: 60px 20px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2000'); background-size: cover; }
+        h1 { font-size: 3rem; color: var(--primary); margin-bottom: 10px; }
+        p { color: #ccc; max-width: 600px; margin: 0 auto 30px auto; }
+
+        .vote-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 50px 20px; }
+        .vote-card { 
+            background: var(--dark); padding: 30px; border-radius: 15px; width: 300px; 
+            border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; 
+        }
+        .vote-card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: 0 0 20px rgba(108, 92, 231, 0.3); }
+        
+        .reward-list { text-align: left; margin: 20px 0; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px; font-size: 0.9rem; }
+        .reward-list li { list-style: none; margin-bottom: 5px; color: #a29bfe; }
+        .reward-list li i { margin-right: 5px; color: #fff; }
+
+        .vote-btn { display: block; background: var(--primary); color: white; padding: 12px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+        .vote-btn:hover { background: var(--secondary); color: black; }
+        .back-link { display: inline-block; margin-top: 30px; color: #777; }
+    </style>
+</head>
+<body>
+
+    <section class="vote-hero">
+        <h1>Vota y Gana</h1>
+        <p>¡Apoya a Nymux Network votando diariamente en las listas de servidores y recibe recompensas increíbles dentro del juego!</p>
+    </section>
+
+    <div class="vote-grid">
+        <div class="vote-card">
+            <h2 style="color: #4cd137;">NameMC</h2>
+            <div class="reward-list">
+                <li><i class="fas fa-gift"></i> 1x Llave Voto</li>
+                <li><i class="fas fa-money-bill"></i> $500 Dinero</li>
+                <li><i class="fas fa-star"></i> 100 XP</li>
+            </div>
+            <a href="#" target="_blank" class="vote-btn">Votar en NameMC</a>
+        </div>
+
+        <div class="vote-card">
+            <h2 style="color: #f1c40f;">Minecraft-MP</h2>
+            <div class="reward-list">
+                <li><i class="fas fa-gift"></i> 1x Llave Común</li>
+                <li><i class="fas fa-money-bill"></i> $250 Dinero</li>
+            </div>
+            <a href="#" target="_blank" class="vote-btn">Votar Aquí</a>
+        </div>
+
+        <div class="vote-card">
+            <h2 style="color: #e84118;">TopG</h2>
+            <div class="reward-list">
+                <li><i class="fas fa-gift"></i> 2x Llave Voto</li>
+                <li><i class="fas fa-gem"></i> 5 Gemas</li>
+            </div>
+            <a href="#" target="_blank" class="vote-btn">Votar Aquí</a>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+
+</body>
+</html>
